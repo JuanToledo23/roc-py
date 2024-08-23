@@ -1,0 +1,12 @@
+__pycache__
+.venv/
+.env
+.python-version
+.vscode/
+.editorconfig
+Dockerfile
+.dockerignore
+.git/
+.gitignore
+tests/
+README.md

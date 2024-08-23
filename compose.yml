@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgis/postgis:15-3.4
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: rocapi
+      POSTGRES_PASSWORD: rocapi
+      POSTGRES_DB: rocdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:
